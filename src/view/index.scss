@@ -4,11 +4,7 @@
   height: 100vh;
   box-sizing: border-box;
   width: 100vw;
-  &.loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .no-drinks {
     height: 300px;
     width: 100vw;
@@ -74,6 +70,87 @@
     .drink-name {
       font-size: 12px !important;
       line-height: 16px !important;
+    }
+  }
+}
+
+.loading-overlay > div > div > span {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cancel-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+}
+.drink-details-dialog {
+  .MuiDialog-paper {
+    overflow: hidden;
+    .cancel-icon {
+      font-size: 20px;
+      top: 8px;
+      right: 8px;
+      position: absolute;
+    }
+  }
+
+  .drink-details {
+    padding: 20px 24px;
+    overflow: auto;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-height: 150px;
+        max-width: 150px;
+        border-radius: 10px;
+      }
+    }
+    .drink-name {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 12px;
+    }
+    .content {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .row {
+        display: flex;
+        .label {
+          font-size: 16px;
+          color: #231919e8;
+          font-weight: bold;
+        }
+        .details {
+          margin-left: 8px;
+        }
+      }
+    }
+    .instructions,
+    .ingredients {
+      margin-top: 20px;
+      .label {
+        color: #231919e8;
+        font-weight: bold;
+      }
+      .details {
+        margin-top: 8px;
+      }
+      .ingredient-details {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        flex-wrap: wrap;
+      }
     }
   }
 }
