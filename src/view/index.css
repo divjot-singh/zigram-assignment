@@ -1,0 +1,45 @@
+.drink-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  margin-top: 16px;
+  flex: 1 0 21%;
+  box-shadow: 2px 3px 4px 2px #959dab;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.drink-card .drink-thumb {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+
+.drink-card:hover .drink-name {
+  color: grey;
+}
+
+.drink-card .drink-name {
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 8px;
+  flex-grow: 1;
+}
+
+.drink-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.select-search__options {
+  list-style: none;
+  padding-left: 0;
+}
+
+.container {
+  padding: 16px;
+}
+
+.category-selector {
+  display: flex;
+}
